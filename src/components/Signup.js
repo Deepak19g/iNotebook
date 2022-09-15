@@ -34,24 +34,24 @@ const Signup = (props) => {
 
   return (
     <div className="container mt-3">
-      <h2><u> Signup to create you notes on iNotebook</u></h2>
+      <h2><u> Signup to create your notes on iNotebook</u></h2>
       <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label htmlFor="name" className="form-label">Name</label>
-          <input type="text" className="form-control" id="name" name="name" onChange={onChange} aria-describedby="name" />
+        <div className="mt-3 mb-3">
+          <label htmlFor="name" className="form-label"><h5>Name</h5> </label>
+          <input type="text" className="form-control" id="name" name="name" placeholder="Enter your name here " onChange={onChange} aria-describedby="name" />
         </div>
-        <div className="mb-3">
-          <label htmlFor="email" className="form-label">Email address</label>
-          <input type="email" className="form-control" id="email" name="email" onChange={onChange} aria-describedby="emailHelp" />
+        <div className="mb-2">
+          <label htmlFor="email" className="form-label"><h5>Email address</h5> </label>
+          <input type="email" className="form-control" id="email" name="email" placeholder="name@gmail.com" onChange={onChange} aria-describedby="emailHelp" />
           <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div className="mb-3">
-          <label htmlFor="password" className="form-label">Password</label>
-          <input type="password" className="form-control" id="password" name="password" onChange={onChange} minLength = {5} required/>
+          <label htmlFor="password" className="form-label"><h5>Password</h5> </label>
+          <input type="password" className="form-control" id="password" name="password" placeholder="******* " onChange={onChange} minLength = {5} required/>
         </div>
         <div className="mb-3">
-          <label htmlFor="cpassword" className="form-label">Confirm Password</label>
-          <input type="password" className="form-control" id="cpassword" name="cpassword" onChange={onChange} minLength = {5} required/>
+          <label htmlFor="cpassword" className="form-label"><h5>Confirm Password</h5> </label>
+          <input type="password" className="form-control" id="cpassword" name="cpassword" placeholder="*******" onChange={onChange} minLength = {5} required/>
         </div>
 
         <button type="submit" className="btn btn-primary">Submit</button>

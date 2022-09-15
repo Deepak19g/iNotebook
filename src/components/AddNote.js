@@ -22,16 +22,17 @@ const AddNote = (props) => {
             <h2>Add a Note</h2>
             <form className="my-3">
                 <div className="mb-3">
-                    <label htmlFor="title" className="form-label">Title</label>
-                    <input type="text" className="form-control" id="title" name="title" aria-describedby="emailHelp" value={note.title} onChange={onChange} minLength={5} required/>
+                    <label htmlFor="title" className="form-label"><h5>Title</h5></label>
+                    <input type="text" className="form-control" id="title" name="title" placeholder="Enter your Title Here"  value={note.title} onChange={onChange} minLength={5} required/>
+                   
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="description" className="form-label">Description</label>
-                    <input type="text" className="form-control" id="description" name="description" value={note.description} onChange={onChange} minLength={5} required/>
+                    <label htmlFor="description" className="form-label"><h5>Description</h5></label>
+                    <input type="text" className="form-control" id="description" name="description" placeholder="Enter your Description Here" value={note.description} onChange={onChange} minLength={5} required/>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="tag" className="form-label">Tag</label>
-                    <input type="text" className="form-control" id="tag" name="tag" value={note.tag} onChange={onChange} minLength={5} required/>
+                    <label htmlFor="tag" className="form-label"><h5>Tag</h5></label>
+                    <input type="text" className="form-control" id="tag" name="tag" placeholder="Enter your Tag Here" value={note.tag} onChange={onChange} minLength={5} required/>
                 </div>
 
                 <button disabled={note.title.length<5 || note.description.length<5} type="submit" className="btn btn-primary" onClick={handleClick}>Add Note</button>
